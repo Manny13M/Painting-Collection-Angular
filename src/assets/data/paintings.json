@@ -1,0 +1,84 @@
+{
+	"paintings": [ 
+		{
+			"title" : "Mona Lisa",
+			"desc": "Painted between 1503 and 1517, Da Vinci's alluring portrait has been dogged by two questions since the day it was made: Who's the subject and why is she smiling? A number of theories for the former have been proffered over the years: That she's the wife of the Florentine merchant Francesco di Bartolomeo del Giocondo; that she's Leonardo's mother, Caterina.", 
+			"painter" : "Leonardo Da Vinci",
+			"year" : 1503,
+			"culturalOrigin": "Italian",
+			"comments": ""
+		},
+		{
+			"title" : "Girl with a Pearl Earring",
+			"desc": "Johannes Vermeer's 1665 study of a young woman is startlingly real and startlingly modern, almost as if it were a photograph. This gets into the debate over whether or not Vermeer employed a pre-photographic device called a camera obscura to create the image.",
+			"painter" : "Johannes Vermeer",
+			"year" : 1665,
+			"culturalOrigin": "Dutch",
+			"comments": ""
+		},
+		{
+			"title" : "The Starry Night",
+			"desc": "Vincent Van Gogh's most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he'd committed himself in 1889.",
+			"painter" : "Vincent van Gogh",
+			"year" : 1889,
+			"culturalOrigin": "Dutch",
+			"comments": ""
+		},
+		{
+			"title" : "The Kiss",
+			"desc": "The Kiss, Gustav Klimt's fin-de-siècle portrayal of intimacy, is a mix of Symbolism and Vienna Jugendstil, the Austrian variant of Art Nouveau. Klimt depicts his subjects as mythical figures made modern by luxuriant surfaces of up-to-the moment graphic motifs.",
+			"painter" : "Gustav Klimt",
+			"year" : 1907,
+			"culturalOrigin": "Austrian",
+			"comments": ""
+		},
+		{
+			"title" : "The Birth of Venus",
+			"desc": "Botticelli's The Birth of Venus was the first full-length, non-religious nude since antiquity. It's claimed that the figure of the Goddess of Love is modeled after one Simonetta Cattaneo Vespucci, whose favors were allegedly shared by Lorenzo and his younger brother, Giuliano.",
+			"painter" : "Sandro Botticelli",
+			"year" : 1484,
+			"culturalOrigin": "Italian",
+			"comments": ""
+		},
+		{
+			"title" : "Arrangement in Grey and Black No. 1",
+			"desc": "James Abbott McNeill Whistler painted the work in his London studio in 1871, and in it, the formality of portraiture becomes an essay in form.",
+			"painter" : "James Abbott McNeill Whistler",
+			"year" : 1871,
+			"culturalOrigin": "American",
+			"comments": ""
+		},
+		{
+			"title" : "The Arnolfini Portrait",
+			"desc": "One of the most significant works produced during the Northern Renaissance, this composition is believed to be one of the first paintings executed in oils",
+			"painter" : "Jan van Eyck",
+			"year" : 1434,
+			"culturalOrigin": "Netherland",
+			"comments": ""
+		},
+		{
+			"title" : "The Garden of Earthly Delights",
+			"desc": "This fantastical triptych is generally considered a distant forerunner to Surrealism. It's the expression of a late medieval artist who believed that God and the Devil, Heaven and Hell were real.",
+			"painter" : "Hieronymus Bosch",
+			"year" : 1503,
+			"culturalOrigin": "Netherland",
+			"comments": ""
+		},
+		{
+			"title" : "A Sunday Afternoon on the Island of La Grande Jatte",
+			"desc": "Georges Seurat's masterpiece, evoking the Paris of La Belle Epoque, is actually depicting a working-class suburban scene well outside the city's center.",
+			"painter" : "Georges Seurat",
+			"year" : 1884,
+			"culturalOrigin": "French",
+			"comments": ""
+		},
+		{
+			"title" : "Les Demoiselles d'Avignon",
+			"desc": "The ur-canvas of 20th-century art, Les Demoiselles d'Avignon ushered in the modern era by decisively breaking with the representational tradition of Western painting, incorporating allusions to the African masks that Picasso had seen in Paris's ethnographic museum at the Palais du Trocadro.",
+			"painter" : "Pablo Picasso",
+			"year" : 1907,
+			"culturalOrigin": "Spain",
+			"comments": ""
+		}
+	]
+}

@@ -1,3 +1,5 @@
+<!-- *** Painting List Tab *** -->
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -12,6 +14,21 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button (click)="getAllPaintings()">Refresh All Paintings from MongoDB</ion-button><br>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <app-number-of-paintings></app-number-of-paintings>
+
+  {{outMsg}}
+  <p>Click on any painting from the list to EDIT</p>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let painting of outRecords" (click)="selectPainting(painting)">
+        <ion-label>
+          <h2>Title: {{ painting.title }}</h2>
+          <p>Painter: {{ painting.painter }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
 </ion-content>

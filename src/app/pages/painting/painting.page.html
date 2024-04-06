@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Painting</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Painting</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button (click)="goToTab2()">Go Back to Tab 2</ion-button>
+  
+  <app-number-of-paintings></app-number-of-paintings>
+
+  <form>
+
+    <ion-item>
+      <ion-label position="stacked">Title</ion-label>
+      <ion-input required type="text" [(ngModel)]="painting.title" name="title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Description</ion-label>
+      <ion-input required type="text" [(ngModel)]="painting.desc" name="desc"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Painter</ion-label>
+      <ion-input required type="text"  [(ngModel)]="painting.painter" name="painter"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Year</ion-label>
+      <ion-input type="number" pattern="[0-9]*" maxlength="4" [(ngModel)]="painting.year" name="year"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Cultural Origin</ion-label>
+      <ion-input type="text"  [(ngModel)]="painting.culturalOrigin" name="culturalOrigin"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Comments</ion-label>
+      <ion-input type="text"  [(ngModel)]="painting.comments" name="comments"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">ID</ion-label>
+      <ion-label position="stacked">{{ painting._id }}</ion-label>    
+    </ion-item>
+
+    <ion-button type="submit" (click)="updatePainting()">Save Changes to Painting</ion-button><br>
+    <ion-button type="submit" (click)="deletePainting()">Delete Painting</ion-button>
+  </form>
+</ion-content>

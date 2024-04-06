@@ -1,3 +1,5 @@
+<!-- *** Main Tab *** -->
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -13,5 +15,48 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-content>
+    <app-painting-collection-desc></app-painting-collection-desc>
+
+    <ion-button (click)="saveJsonPaintingsToMongoDB()">Save JSON Paintings to MongoDB</ion-button><br>
+
+    <app-number-of-paintings></app-number-of-paintings> <br>
+
+    <form>
+
+      <ion-item>
+        <ion-label position="stacked">Title</ion-label>
+        <ion-input required type="text" [(ngModel)]="title" name="title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Description</ion-label>
+        <ion-input required type="text" [(ngModel)]="desc" name="desc"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Painter</ion-label>
+        <ion-input required type="text"  [(ngModel)]="painter" name="painter"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Year</ion-label>
+        <ion-input type="number" pattern="[0-9]*" maxlength="4" [(ngModel)]="year" name="year"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Cultural Origin</ion-label>
+        <ion-input type="text"  [(ngModel)]="culturalOrigin" name="culturalOrigin"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Comments</ion-label>
+        <ion-input type="text"  [(ngModel)]="comments" name="comments"></ion-input>
+      </ion-item>
+
+      <ion-button type="submit" (click)="savePainting()">Save Painting</ion-button>
+    </form>
+    
+  </ion-content>
+
 </ion-content>
